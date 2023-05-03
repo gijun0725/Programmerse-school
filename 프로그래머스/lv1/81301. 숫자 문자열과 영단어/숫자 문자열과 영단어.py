@@ -14,3 +14,5 @@ def solution(s):
                 pass
     
     return int(''.join(answer))
+#이 문제의 핵심 dic를 통해서 키와 벨류값을 잘 얻어올수 있는지 추가적으로 isdigit을 쓸줄 아는지에 대한 문제라고 생각한다
+#카카오 문제 치고 어렵지 않았음
