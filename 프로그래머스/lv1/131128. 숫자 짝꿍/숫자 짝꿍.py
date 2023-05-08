@@ -35,3 +35,24 @@ def solution(X, Y):
         return "-1"
     else:
         return answer
+    
+    
+  #=================================================================
+기존풀이
+    def solution(X, Y):
+    answer = []
+    X = sorted(X)
+    Y = sorted(Y)
+    for i in X:
+        if i in Y:
+            answer.append(i)
+            del [Y[Y.index(i)]]
+    if len(answer)==0:
+        answer='-1'
+    elif int(''.join(answer))==0:
+        answer='0'
+    else:
+        answer.sort(reverse=True)
+    answer=''.join(answer)
+
+    return answer
